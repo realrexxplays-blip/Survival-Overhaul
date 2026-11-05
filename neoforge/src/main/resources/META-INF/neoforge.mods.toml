@@ -1,0 +1,12 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="survival_overhaul"
+version="0.1.0"
+displayName="Survival Overhaul"
+authors="RealRexPlayz"
+description='''
+A survival framework focused on structural integrity, ecology, and a living atlas.
+'''
