@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "survival_overhaul",
+  "version": "${version}",
+  "name": "Survival Overhaul",
+  "description": "A survival framework focused on structural integrity, ecology, and a living atlas.",
+  "authors": ["RealRexPlayz"],
+  "license": "All Rights Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.realrexxplayz.survivaloverhaul.fabric.SurvivalOverhaulFabric"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "1.21.1",
+    "java": ">=21"
+  }
+}
