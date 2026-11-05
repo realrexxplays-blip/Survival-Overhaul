@@ -1,0 +1,32 @@
+plugins {
+    id 'net.neoforged.moddev' version '2.0.107'
+}
+
+group = 'com.realrexxplayz'
+version = '0.1.0'
+base {
+    archivesName = 'SurvivalOverhaul-NeoForge-1.21.1'
+}
+
+sourceSets.main.java.srcDir '../common/src/main/java'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+    withSourcesJar()
+}
+
+neoForge {
+    version = '21.1.172'
+
+    mods {
+        survival_overhaul {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = 21
+}
